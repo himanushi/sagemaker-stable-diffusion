@@ -10,3 +10,14 @@ git config --global user.name "Your Name"
 # Github の SSH Keys に以下内容を登録 https://github.com/settings/keys
 cat ~/.ssh/id_rsa.pub
 ```
+
+新しくリポジトリを作る場合
+```
+echo "# sagemaker-stable-diffusion" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:himanushi/sagemaker-stable-diffusion.git
+git push -u origin main
+```
